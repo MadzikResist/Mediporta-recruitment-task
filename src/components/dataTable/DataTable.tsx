@@ -109,6 +109,7 @@ const DataTable: FC<DataTableProps> = ({
                   setRowsPerPageSelect(newInputValue);
                 }
               }}
+
               options={options}
               freeSolo={true}
               renderInput={(params) => (
@@ -116,7 +117,6 @@ const DataTable: FC<DataTableProps> = ({
                   sx={{ width: 110 }}
                   {...params}
                   label="Rows per page"
-                  InputProps={{ sx: { fontSize: "14px" } }}
                 />
               )}
             />
